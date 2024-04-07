@@ -1,0 +1,3 @@
+#include "resource.h"
+
+IDI_ICON    ICON    "/home/abdul/Documents/codeblocks/VPR_GUI/abdul.png"

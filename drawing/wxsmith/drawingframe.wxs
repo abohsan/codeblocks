@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="drawingFrame">
+		<size>1307,524</size>
+		<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+			<pos>344,200</pos>
+			<handler function="paintPanel" entry="EVT_MOTION" />
+			<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="TextCtrl1" member="yes">
+				<value>1</value>
+				<pos>1096,48</pos>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+				<label>Pen Width</label>
+				<pos>1008,56</pos>
+			</object>
+			<object class="wxButton" name="ID_BUTTON1" variable="Button1" member="yes">
+				<label>Pen Color</label>
+				<pos>88,40</pos>
+				<handler function="ChangeColour" entry="EVT_BUTTON" />
+			</object>
+		</object>
+	</object>
+</wxsmith>

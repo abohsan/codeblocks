@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="VPR_GUI" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/VPR_GUI" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/VPR_GUI" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="`wx-config --cflags`" />
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="`wx-config --libs`" />
+		</Linker>
+		<Unit filename="VPR_GUIApp.cpp" />
+		<Unit filename="VPR_GUIApp.h" />
+		<Unit filename="VPR_GUIMain.cpp" />
+		<Unit filename="VPR_GUIMain.h" />
+		<Unit filename="include/DrawingCanvas.h" />
+		<Unit filename="include/PopupDialog.h" />
+		<Unit filename="include/graphicobject.h" />
+		<Unit filename="src/DrawingCanvas.cpp" />
+		<Unit filename="src/PopupDialog.cpp" />
+		<Unit filename="wxsmith/VPR_GUIframe.wxs" />
+		<Extensions>
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="VPR_GUIApp.cpp" main="VPR_GUIFrame" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxFrame wxs="wxsmith/VPR_GUIframe.wxs" src="VPR_GUIMain.cpp" hdr="VPR_GUIMain.h" fwddecl="0" i18n="1" name="VPR_GUIFrame" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
